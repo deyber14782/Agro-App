@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boceto 1</title>
+    <link rel="icon" href="image/logito.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css1/free.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lrw8htu.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Agro<b>app</b></h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="Home.html" class="text-menu-selected"> <i class="fa-solid fa-house"></i> Inicio </a></li>
+                        <li> <a href="Us.html"> <i class="fa-brands fa-youtube"></i> Sobre nosotros </a></li>
+                        <li> <a href="Members.html"> <i class="fa-solid fa-bookmark"></i> Miembros </a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué estas buscando?">
+    </div>
+
+    <ul id="box-search">
+        <li><a href=""><i class="fas fa-search"> Manzanas</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Pera</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Cebolla</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Supermercado</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Papa criolla</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Como hacer</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Como subir</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Tomate</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Maracuya</i></a></li>
+        <li><a href=""><i class="fas fa-search"> Mora</i></a></li>
+    </ul>
+    <div id="cover-ctn-search"></div>
+
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+    
+    <div class="free-container-cover">
+        <div class="container-info-cover">
+            <h1>Cualquier cosa que se planta se cosecha</h1>
+            <p>Encuentra tus productos para vender y comprar al precio que tu decidas</p>
+            <br/>
+            <br/>
+            <div class="header__ingresar">
+                <a href="registerPage.html">Ingresar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-post">
+
+        <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+        <input type="radio" id="BOJACA" name="categories" value="BOJACA">
+        <input type="radio" id="FACATATIVA" name="categories" value="FACATATIVA">
+        <input type="radio" id="FUNZA" name="categories" value="FUNZA">
+        <input type="radio" id="MADRID" name="categories" value="MADRID">
+        <input type="radio" id="MOSQUERA" name="categories" value="MOSQUERA">
+        <input type="radio" id="ROSAL" name="categories" value="ROSAL">
+        <input type="radio" id="SUBACHOQUE" name="categories" value="SUBACHOQUE">
+        <input type="radio" id="ZIPACON" name="categories" value="ZIPACON">
+
+        <div class="container-category">
+            <label for="TODOS">TODOS</label>
+            <label for="BOJACA">BOJACÁ</label>
+            <label for="FACATATIVA">FACATATIVÁ</label>
+            <label for="FUNZA">FUNZA</label>
+            <label for="MADRID">MADRID</label>
+            <label for="MOSQUERA">MOSQUERA</label>
+            <label for="ROSAL">ROSAL</label>
+            <label for="SUBACHOQUE">SUBACHOQUE</label>
+            <label for="ZIPACON">ZIPACÓN</label>
+        </div>
+
+        <div class="posts" id="posts">
+            <div class="post" data-category="FUNZA">
+                <div class="ctn-img">
+                    <img src="/image/fresas.jpg" alt="">
+                </div>
+                <h2>Fresas</h2>
+                <span>3 canastos de fresa madura - $100.000 </span>
+                <ul class="ctn-tag">
+                    <li>Funza</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="MADRID">
+                <div class="ctn-img">
+                    <img src="/image/lechuga.jpg" alt="">
+                </div>
+                <h2>Lechuga</h2>
+                <span> 10 kl de lechuga fresca - $30.000 </span>
+                <ul class="ctn-tag">
+                    <li>Madrid</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="MOSQUERA">
+                <div class="ctn-img">
+                    <img src="/image/Luisa.png" alt="">
+                </div>
+                <h2>Luisa Ortego</h2>
+                <span>Dueña de un lichigo en Mosquera  -  Cra 101 A #58-18 </span>
+                <ul class="ctn-tag">
+                    <li>Mosquera</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="ZIPACON BOJACA">
+                <div class="ctn-img">
+                    <img src="/image/papa.jpg" alt="">
+                </div>
+                <h2>Papa</h2>
+                <span>30 toneladas de papa, cultivada en 2 municipios de sabana occidente </span>
+                <ul class="ctn-tag">
+                    <li>Bojaca</li>
+                    <li>Zipacon</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="FUNZA">
+                <div class="ctn-img">
+                    <img src="/image/Claire.jpg" alt="">
+                </div>
+                <h2>Claire Pastrana</h2>
+                <span>Encargada de un restaurante de comida mexicana en Funza 
+                    Compra de papa, maiz, pimenton, platano, cebolla, tomate </span>
+                <ul class="ctn-tag">
+                    <li>Funza</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="FACATATIVA BOJACA ROSAL" >
+                <div class="ctn-img">
+                    <img src="/image/Javier.jpg" alt="">
+                </div>
+                <h2>Javier Peña</h2>
+                <span>Dueño de una cadena de hoteles ubicados en 3 municipios</span>
+                <ul class="ctn-tag">
+                    <li>Rosal</li>
+                    <li>Facatativá</li>
+                    <li>Bojacá</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="MOSQUERA">
+                <div class="ctn-img">
+                    <img src="/image/manzanas.jpg" alt="">
+                </div>
+                <h2>Manzanas rojas</h2>
+                <span>3 cestas de manzanas rojas recien cosechadas - $20.000 </span>
+                <ul class="ctn-tag">
+                    <li>Mosquera</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="MADRID">
+                <div class="ctn-img">
+                    <img src="/image/sabila.jpeg" alt="">
+                </div>
+                <h2>Sabila</h2>
+                <span>Cultivo de sabila bien tratada en madrid - Cll 64 #28-12 </span>
+                <ul class="ctn-tag">
+                    <li>Madrid</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="MADRID">
+                <div class="ctn-img">
+                    <img src="/image/mermelada.jfif" alt="">
+                </div>
+                <h2>Mermeladas</h2>
+                <span>50 frascos de mermelada de distintos sabores - Fresa - Mora - Piña - Cereza</span>
+                <ul class="ctn-tag">
+                    <li>Madrid</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+            <div class="post" data-category="ROSAL">
+                <div class="ctn-img">
+                    <img src="/image/tienda.jpg" alt="">
+                </div>
+                <h2>Itachi Uchiha</h2>
+                <span>Trabaja en lichigos Boruto, compra - frutas - verduras - legumbres </span>
+                <ul class="ctn-tag">
+                    <li>Rosal</li>
+                </ul>
+                <a href="#"><button>Ir</button></a>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="/image/logito.png" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/profile.php?id=100085595738312" target="_blank"><i class="fa-brands fa-facebook-f icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/agroapp23/" target="_blank"><i class="fa-solid fa-envelope icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/agroapp23/" target="_blank"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                <a href="https://www.linkedin.com/in/agro-app-82656224b/" target="_blank"><i class="fa-brands fa-linkedin-in icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/agroapp23/" target="_blank"><i class="fa-brands fa-whatsapp icon-redes-footer"></i> </a>
+            </div>
+            <hr>
+            <h4>Todos los derechos reservados © 2022 <b>Julian Guzman</b></h4>
+        </footer>
+    </div>
+
+</div>
+    <script src="/js/home.js" type="module"></script>
+</body>
+</html>

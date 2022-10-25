@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css1/register.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body> 
+<main>
+    <div class="contenedor__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btn__registrarse">Regístrarse</button>
+            </div>
+        </div>
+<!--Formulario de Login y registro-->
+        <div class="contenedor__login-register">
+            <!--Login-->
+            <form action="" class="formulario__login" id="form1">
+                <h2>Iniciar Sesión</h2>
+                <select id="rol1">
+                    <option hidden selected value="0">Escoja una opcion</option>
+                    <option value="1">Agricultor</option>
+                    <option value="2">Comprador</option>
+                </select>
+                <input id="emaile" class="input" type="email" placeholder="Correo Electronico">
+                <input id="passwordo" class="input" type="password" placeholder="Contraseña">
+                <button id="login" class="button">Ingresar</button>
+            </form>
+            <!--Register-->
+            <form action="" class="formulario__register" id="form2">
+                <h2>Regístrarse</h2>
+                <input id="name" class="input" type="text" placeholder="Nombre y apellido">
+                <input id="address" class="input" type="text" placeholder="Dirección del lugar de trabajo">
+                <input id="numberPhone" class="input" type="number" placeholder="Número de teléfono">
+                <select id="location" name="option2">
+                    <option hidden selected value="0">Seleccione su municipio</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Mosquera">Mosquera</option>
+                    <option value="Zipacón">Zipacón</option>
+                    <option value="Facatativá">Facatativá</option>
+                    <option value="Bojacá">Bojacá</option>
+                    <option value="Funza">Funza</option>
+                    <option value="Subachoque">Subachoque</option>
+                    <option value="El Rosal">El Rosal</option>
+                </select>
+                <select id="rol" name="option">
+                    <option hidden selected value="0">Escoja una opcion</option>
+                    <option value="1">Agricultor</option>
+                    <option value="2">Comprador</option>
+                </select>
+                <input id="email" class="input" type="email" placeholder="Correo electronico">
+                <input id="password" class="input" type="password" placeholder="Contraseña">
+                <input id="password2" class="input" type="password" placeholder="Confirmar Contraseña">
+                <button id="registerButton" class="submit">Regístrarse</button>
+            </form>
+        </div>
+    </div>   
+</main>
+    <script src="/js/register.js" type="module"> </script>
+    <script src="/js/login.js" type="module"> </script>
+    <script src="/js/style.js"></script>
+</body>
+</html>
